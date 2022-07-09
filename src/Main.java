@@ -21,5 +21,6 @@ public class Main {
         book1.setYearOfPublication(2016);
 
         System.out.println("book1.getYearOfPublication() = " + book1.getYearOfPublication());
+
     }
 }
