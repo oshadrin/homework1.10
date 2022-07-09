@@ -1,11 +1,11 @@
 public class Main {
     public static void main(String[] args) {
 
-        Author author1 = new Author("Имя1", "Фамилия1");
-        Book book1 = new Book("Название книги 1", 2006, author1);
+        Author author1 = new Author("Иванов", "Иван");
+        Book book1 = new Book("Вавилон", 2006, author1);
 
-        Author author2 = new Author("Имя2", "Фамилия2");
-        Book book2 = new Book("Название книги 2", 2019, author2);
+        Author author2 = new Author("Петров", "Петр");
+        Book book2 = new Book("Война и мир", 2019, author2);
 
         System.out.println("book1.getYearOfPublication() = " + book1.getYearOfPublication());
         System.out.println("book1.getName() = " + book1.getName());
@@ -21,5 +21,15 @@ public class Main {
         book1.setYearOfPublication(2016);
 
         System.out.println("book1.getYearOfPublication() = " + book1.getYearOfPublication());
+
+    //hw1.10
+        System.out.println("author1.hashCode() = " + author1.hashCode());
+        System.out.println("author1.equals(author2) = " + author1.equals(author2));
+        System.out.println("author1 = " + author1);
+
+        System.out.println("author1.hashCode() = " + author2.hashCode());
+        System.out.println("author1.equals(author2) = " + author1.equals(author2));
+        System.out.println("author1 = " + author2);
+
     }
 }
